@@ -1,0 +1,76 @@
+
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+.green{
+    background: #56B870; /* Old browsers */
+}
+
+/***********************************************************************
+ *  Red Background
+ **********************************************************************/
+.red{
+    background: red; 
+}
+
+/***********************************************************************
+ *  Yellow Background
+ **********************************************************************/
+.yellow{
+    background: #F3AAAA; 
+}
+
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
+.blue{
+    background: #7abcff; 
+}
+
+/***********************************************************************
+ *  Purple Background
+ **********************************************************************/
+.purple {
+    background: #A88BEB; 
+}
+
+/***********************************************************************
+ *  Brown Background
+ **********************************************************************/
+.brown {
+    background: #f6e6b4; 
+}
+
+.zone {
+    cursor:pointer;
+    /* display: inline-block; */
+    text-align: center;
+    font-size:160px;
+    border-radius:8px;
+    border:1px solid #bbb;
+}
+
+.zone:hover{
+    box-shadow: 2px 2px 8px  rgba(0, 0, 0, 0.7);
+}
+
+/* Grid starts here */
+.container{
+    display: grid;
+    /* grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 1fr 2fr 1fr 1fr; */
+    /* justify-content: space-around; */
+    /* grid-template-rows: 300px 300px ;
+    align-items: center; */
+    /* grid-row-gap: 64px;
+    grid-column-gap: 32px; */
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    grid-gap: 24px;
+}
+
+.red{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
